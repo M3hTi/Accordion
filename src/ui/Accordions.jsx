@@ -17,11 +17,11 @@ function Accordions({ children }) {
   const close = () => setActiveAccordion("");
   const open = (name) => setActiveAccordion(name);
   return (
-    <>
+    <div>
       <AccordionsContext.Provider value={{ activeAccordion, close, open }}>
         {children}
       </AccordionsContext.Provider>
-    </>
+    </div>
   );
 }
 
